@@ -4,8 +4,9 @@ This script is a wrapper around the sf_bulk package that will query and delete d
 # Setup
 
 1. create a `.env` file with your salesforce username, password, and token
-2. Adjust the calls to the `query_and_delete` function per your requirements.
-3. run the script
+2. install [salesforce_bulk](https://github.com/heroku/salesforce-bulk): `pip install salesforce_bulk`
+3. Adjust the calls to the `query_and_delete` function per your requirements.
+4. run the script
 
 # Known Issues
 1. We're blinding setting a limit of 5000 records per batch due to salesforce limits. If you run into errors, you can try dropping the limit
