@@ -37,4 +37,4 @@ if __name__ == '__main__':
     for x in range(10):
         print('running job %s' % x)
         query_and_delete('EmailMessage')
-        query_and_delete('select Id from ContentVersion order by contentsize desc limit 5000')
+        query_and_delete('ContentVersion', 'select Id from ContentVersion order by contentsize desc limit 5000')
